@@ -1,0 +1,8 @@
+s, n = 0, 0
+for i in input():
+    if i.isdigit():
+        n = n * 10 + ord(i) - ord('0')
+    else:
+        s += n
+        n = 0
+print(s + n)
